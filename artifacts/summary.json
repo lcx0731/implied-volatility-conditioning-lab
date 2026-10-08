@@ -1,0 +1,1723 @@
+{
+  "schema_version": 1,
+  "data": "Deterministic synthetic forward-Black calls; no market data or trading results.",
+  "configuration": {
+    "forward": 100.0,
+    "true_volatility": 0.25,
+    "discount_rate": 0.03,
+    "tick": 0.01,
+    "quote_half_width": 0.005,
+    "maturities_years": [
+      0.003968253968253968,
+      0.01984126984126984,
+      0.08333333333333333,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "strike_ratios": [
+      0.7,
+      0.85,
+      0.95,
+      1.0,
+      1.05,
+      1.15,
+      1.3
+    ]
+  },
+  "software": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "checks": {
+    "number_of_options": 42,
+    "true_volatility_in_all_ranges": true,
+    "quote_point_status_counts": {
+      "interior": 34,
+      "lower_boundary": 6,
+      "outside_bounds": 2
+    },
+    "full_precision_status_counts": {
+      "lower_boundary": 3,
+      "interior": 39
+    },
+    "max_interior_quote_repricing_error": 8.313350008393172e-13,
+    "max_interior_quote_volatility_error": 1.6275154330044084,
+    "max_full_precision_interior_volatility_error": 2.4910074003514637e-11
+  },
+  "options": [
+    {
+      "maturity_years": 0.003968253968253968,
+      "strike_ratio": 0.7,
+      "forward": 100.0,
+      "strike": 70.0,
+      "discount": 0.999880959466839,
+      "true_volatility": 0.25,
+      "unrounded_price": 29.996428784005168,
+      "rounded_quote": 30.0,
+      "intrinsic_price": 29.996428784005168,
+      "price_upper_bound": 99.9880959466839,
+      "full_precision_inverse": {
+        "status": "lower_boundary",
+        "volatility": 0.0,
+        "total_std": 0.0,
+        "repricing_error": 0.0,
+        "vega": 0.0,
+        "iterations": 0
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 1.8775154330044084,
+        "total_std": 0.11827235520036705,
+        "repricing_error": 0.0,
+        "vega": 0.02223835546005016,
+        "iterations": 12
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 29.995,
+        "quote_upper": 30.005,
+        "feasible_price_lower": 29.996428784005168,
+        "feasible_price_upper": 30.005,
+        "volatility_lower": 0.0,
+        "volatility_upper": 2.033318310919956,
+        "upper_unbounded": false
+      },
+      "interval_width": 2.033318310919956,
+      "true_vega": 8.697681407469843e-112,
+      "local_linear_width": 1.1497316964739229e+109
+    },
+    {
+      "maturity_years": 0.003968253968253968,
+      "strike_ratio": 0.85,
+      "forward": 100.0,
+      "strike": 85.0,
+      "discount": 0.999880959466839,
+      "true_volatility": 0.25,
+      "unrounded_price": 14.998214392002584,
+      "rounded_quote": 15.0,
+      "intrinsic_price": 14.998214392002584,
+      "price_upper_bound": 99.9880959466839,
+      "full_precision_inverse": {
+        "status": "lower_boundary",
+        "volatility": 0.0,
+        "total_std": 0.0,
+        "repricing_error": 0.0,
+        "vega": 0.0,
+        "iterations": 0
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.8550953740585078,
+        "total_std": 0.05386594540477532,
+        "repricing_error": 8.881784197001252e-15,
+        "vega": 0.024436692256115847,
+        "iterations": 13
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 14.995,
+        "quote_upper": 15.005,
+        "feasible_price_lower": 14.998214392002584,
+        "feasible_price_upper": 15.005,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.9697085538695622,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.9697085538695622,
+      "true_vega": 1.7370033297496336e-23,
+      "local_linear_width": 5.7570413531915164e+20
+    },
+    {
+      "maturity_years": 0.003968253968253968,
+      "strike_ratio": 0.95,
+      "forward": 100.0,
+      "strike": 95.0,
+      "discount": 0.999880959466839,
+      "true_volatility": 0.25,
+      "unrounded_price": 4.999634570713071,
+      "rounded_quote": 5.0,
+      "intrinsic_price": 4.999404797334195,
+      "price_upper_bound": 99.9880959466839,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2500000000000413,
+        "total_std": 0.015748519708720404,
+        "repricing_error": 0.0,
+        "vega": 0.012174889100913744,
+        "iterations": 13
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.26985093985622505,
+        "total_std": 0.01699901137896713,
+        "repricing_error": 0.0,
+        "vega": 0.02581703233246808,
+        "iterations": 15
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 4.995,
+        "quote_upper": 5.005,
+        "feasible_price_lower": 4.999404797334195,
+        "feasible_price_upper": 5.005,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.33875578915498455,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.33875578915498455,
+      "true_vega": 0.012174889100892396,
+      "local_linear_width": 0.8213627177324366
+    },
+    {
+      "maturity_years": 0.003968253968253968,
+      "strike_ratio": 1.0,
+      "forward": 100.0,
+      "strike": 100.0,
+      "discount": 0.999880959466839,
+      "true_volatility": 0.25,
+      "unrounded_price": 0.628193754601309,
+      "rounded_quote": 0.63,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.9880959466839,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2499999999999968,
+        "total_std": 0.0157485197087176,
+        "repricing_error": 0.0,
+        "vega": 2.5127230848271003,
+        "iterations": 11
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2507188398796398,
+        "total_std": 0.01579380236476548,
+        "repricing_error": 2.1760371282653068e-14,
+        "vega": 2.5127226362055226,
+        "iterations": 12
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 0.625,
+        "quote_upper": 0.635,
+        "feasible_price_lower": 0.625,
+        "feasible_price_upper": 0.635,
+        "volatility_lower": 0.2487289669450365,
+        "volatility_upper": 0.25270871379891485,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.003979746853878363,
+      "true_vega": 2.5127230848271003,
+      "local_linear_width": 0.003979746140903583
+    },
+    {
+      "maturity_years": 0.003968253968253968,
+      "strike_ratio": 1.05,
+      "forward": 100.0,
+      "strike": 105.0,
+      "discount": 0.999880959466839,
+      "true_volatility": 0.25,
+      "unrounded_price": 0.0004342166684936546,
+      "rounded_quote": 0.0,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.9880959466839,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2500000000000033,
+        "total_std": 0.015748519708718007,
+        "repricing_error": 5.903480829183572e-17,
+        "vega": 0.02120993065698625,
+        "iterations": 13
+      },
+      "quote_point_inverse": {
+        "status": "lower_boundary",
+        "volatility": 0.0,
+        "total_std": 0.0,
+        "repricing_error": 0.0,
+        "vega": 0.0,
+        "iterations": 0
+      },
+      "quote_consistent_interval": {
+        "quote_lower": -0.005,
+        "quote_upper": 0.005,
+        "feasible_price_lower": 0.0,
+        "feasible_price_upper": 0.005,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.3179039862843136,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.3179039862843136,
+      "true_vega": 0.02120993065698359,
+      "local_linear_width": 0.47147726042694044
+    },
+    {
+      "maturity_years": 0.003968253968253968,
+      "strike_ratio": 1.15,
+      "forward": 100.0,
+      "strike": 114.99999999999999,
+      "discount": 0.999880959466839,
+      "true_volatility": 0.25,
+      "unrounded_price": 6.516955022006587e-20,
+      "rounded_quote": 0.0,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.9880959466839,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2500000000000191,
+        "total_std": 0.015748519708719006,
+        "repricing_error": 1.3012064186766262e-31,
+        "vega": 2.1294402036234457e-17,
+        "iterations": 15
+      },
+      "quote_point_inverse": {
+        "status": "lower_boundary",
+        "volatility": 0.0,
+        "total_std": 0.0,
+        "repricing_error": 0.0,
+        "vega": 0.0,
+        "iterations": 0
+      },
+      "quote_consistent_interval": {
+        "quote_lower": -0.005,
+        "quote_upper": 0.005,
+        "feasible_price_lower": 0.0,
+        "feasible_price_upper": 0.005,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.8084167723332624,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.8084167723332624,
+      "true_vega": 2.12944020361063e-17,
+      "local_linear_width": 469606987932519.94
+    },
+    {
+      "maturity_years": 0.003968253968253968,
+      "strike_ratio": 1.3,
+      "forward": 100.0,
+      "strike": 130.0,
+      "discount": 0.999880959466839,
+      "true_volatility": 0.25,
+      "unrounded_price": 1.378630091149983e-63,
+      "rounded_quote": 0.0,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.9880959466839,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999987416,
+        "total_std": 0.015748519708709875,
+        "repricing_error": -1.5159903293586053e-73,
+        "vega": 1.5469420568431514e-60,
+        "iterations": 18
+      },
+      "quote_point_inverse": {
+        "status": "lower_boundary",
+        "volatility": 0.0,
+        "total_std": 0.0,
+        "repricing_error": 0.0,
+        "vega": 0.0,
+        "iterations": 0
+      },
+      "quote_consistent_interval": {
+        "quote_lower": -0.005,
+        "quote_upper": 0.005,
+        "feasible_price_lower": 0.0,
+        "feasible_price_upper": 0.005,
+        "volatility_lower": 0.0,
+        "volatility_upper": 1.4219671294259963,
+        "upper_unbounded": false
+      },
+      "interval_width": 1.4219671294259963,
+      "true_vega": 1.5469420570592922e-60,
+      "local_linear_width": 6.464366234253022e+57
+    },
+    {
+      "maturity_years": 0.01984126984126984,
+      "strike_ratio": 0.7,
+      "forward": 100.0,
+      "strike": 70.0,
+      "discount": 0.9994049390238126,
+      "true_volatility": 0.25,
+      "unrounded_price": 29.982148170714378,
+      "rounded_quote": 29.98,
+      "intrinsic_price": 29.982148170714378,
+      "price_upper_bound": 99.94049390238125,
+      "full_precision_inverse": {
+        "status": "lower_boundary",
+        "volatility": 0.0,
+        "total_std": 0.0,
+        "repricing_error": 0.0,
+        "vega": 0.0,
+        "iterations": 0
+      },
+      "quote_point_inverse": {
+        "status": "outside_bounds",
+        "volatility": null
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 29.975,
+        "quote_upper": 29.985,
+        "feasible_price_lower": 29.982148170714378,
+        "feasible_price_upper": 29.985,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.8239220549141428,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.8239220549141428,
+      "true_vega": 2.4846198938347216e-22,
+      "local_linear_width": 4.024760497496526e+19
+    },
+    {
+      "maturity_years": 0.01984126984126984,
+      "strike_ratio": 0.85,
+      "forward": 100.0,
+      "strike": 85.0,
+      "discount": 0.9994049390238126,
+      "true_volatility": 0.25,
+      "unrounded_price": 14.991075359798874,
+      "rounded_quote": 14.99,
+      "intrinsic_price": 14.991074085357189,
+      "price_upper_bound": 99.94049390238125,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999657857,
+        "total_std": 0.03521476061320625,
+        "repricing_error": 0.0,
+        "vega": 0.00012276307082282175,
+        "iterations": 14
+      },
+      "quote_point_inverse": {
+        "status": "outside_bounds",
+        "volatility": null
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 14.985,
+        "quote_upper": 14.995000000000001,
+        "feasible_price_lower": 14.991074085357189,
+        "feasible_price_upper": 14.995000000000001,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.410649655174002,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.410649655174002,
+      "true_vega": 0.0001227630708586059,
+      "local_linear_width": 81.45772120280081
+    },
+    {
+      "maturity_years": 0.01984126984126984,
+      "strike_ratio": 0.95,
+      "forward": 100.0,
+      "strike": 95.0,
+      "discount": 0.9994049390238126,
+      "true_volatility": 0.25,
+      "unrounded_price": 5.107919654665267,
+      "rounded_quote": 5.11,
+      "intrinsic_price": 4.997024695119062,
+      "price_upper_bound": 99.94049390238125,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2500000000000009,
+        "total_std": 0.03521476061368831,
+        "repricing_error": 3.552713678800501e-15,
+        "vega": 1.8946216163108267,
+        "iterations": 13
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2510929651609741,
+        "total_std": 0.03536871463969941,
+        "repricing_error": -6.217248937900877e-15,
+        "vega": 1.9121587241401188,
+        "iterations": 13
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 5.105,
+        "quote_upper": 5.115,
+        "feasible_price_lower": 5.105,
+        "feasible_price_upper": 5.115,
+        "volatility_lower": 0.24844874950881146,
+        "volatility_upper": 0.25367987476116216,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.005231125252350699,
+      "true_vega": 1.8946216163108125,
+      "local_linear_width": 0.005278098758036919
+    },
+    {
+      "maturity_years": 0.01984126984126984,
+      "strike_ratio": 1.0,
+      "forward": 100.0,
+      "strike": 100.0,
+      "discount": 0.9994049390238126,
+      "true_volatility": 0.25,
+      "unrounded_price": 1.4039571667479835,
+      "rounded_quote": 1.4000000000000001,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.94049390238125,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000133,
+        "total_std": 0.035214760613688376,
+        "repricing_error": 2.1760371282653068e-14,
+        "vega": 5.615248351543186,
+        "iterations": 12
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24929528227911338,
+        "total_std": 0.0351154947503232,
+        "repricing_error": -3.3306690738754696e-15,
+        "vega": 5.615253251827632,
+        "iterations": 12
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 1.3950000000000002,
+        "quote_upper": 1.405,
+        "feasible_price_lower": 1.3950000000000002,
+        "feasible_price_upper": 1.405,
+        "volatility_lower": 0.24840485097952544,
+        "volatility_upper": 0.25018571455914845,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00178086357962301,
+      "true_vega": 5.615248351543186,
+      "local_linear_width": 0.0017808651325727728
+    },
+    {
+      "maturity_years": 0.01984126984126984,
+      "strike_ratio": 1.05,
+      "forward": 100.0,
+      "strike": 105.0,
+      "discount": 0.9994049390238126,
+      "true_volatility": 0.25,
+      "unrounded_price": 0.13650015105260493,
+      "rounded_quote": 0.14,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.94049390238125,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000144,
+        "total_std": 0.03521476061368839,
+        "repricing_error": -1.887379141862766e-15,
+        "vega": 2.2035535672044126,
+        "iterations": 13
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.251578729462455,
+        "total_std": 0.03543713893406471,
+        "repricing_error": -3.0531133177191805e-15,
+        "vega": 2.2301697894292305,
+        "iterations": 13
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 0.135,
+        "quote_upper": 0.14500000000000002,
+        "feasible_price_lower": 0.135,
+        "feasible_price_upper": 0.14500000000000002,
+        "volatility_lower": 0.24931742258842832,
+        "volatility_upper": 0.2538021505309109,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.004484727942482558,
+      "true_vega": 2.2035535672043896,
+      "local_linear_width": 0.004538124304682471
+    },
+    {
+      "maturity_years": 0.01984126984126984,
+      "strike_ratio": 1.15,
+      "forward": 100.0,
+      "strike": 114.99999999999999,
+      "discount": 0.9994049390238126,
+      "true_volatility": 0.25,
+      "unrounded_price": 3.094220887276378e-05,
+      "rounded_quote": 0.0,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.94049390238125,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000194,
+        "total_std": 0.03521476061368846,
+        "repricing_error": 3.957337929572091e-18,
+        "vega": 0.0022870321464134487,
+        "iterations": 14
+      },
+      "quote_point_inverse": {
+        "status": "lower_boundary",
+        "volatility": 0.0,
+        "total_std": 0.0,
+        "repricing_error": 0.0,
+        "vega": 0.0,
+        "iterations": 0
+      },
+      "quote_consistent_interval": {
+        "quote_lower": -0.005,
+        "quote_upper": 0.005,
+        "feasible_price_lower": 0.0,
+        "feasible_price_upper": 0.005,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.36155205067817175,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.36155205067817175,
+      "true_vega": 0.0022870321464131724,
+      "local_linear_width": 4.3724789857822195
+    },
+    {
+      "maturity_years": 0.01984126984126984,
+      "strike_ratio": 1.3,
+      "forward": 100.0,
+      "strike": 130.0,
+      "discount": 0.9994049390238126,
+      "true_volatility": 0.25,
+      "unrounded_price": 2.4224319493219528e-14,
+      "rounded_quote": 0.0,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.94049390238125,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2499999999999861,
+        "total_std": 0.03521476061368623,
+        "repricing_error": -3.838281620443355e-26,
+        "vega": 5.659944770461979e-12,
+        "iterations": 14
+      },
+      "quote_point_inverse": {
+        "status": "lower_boundary",
+        "volatility": 0.0,
+        "total_std": 0.0,
+        "repricing_error": 0.0,
+        "vega": 0.0,
+        "iterations": 0
+      },
+      "quote_consistent_interval": {
+        "quote_lower": -0.005,
+        "quote_upper": 0.005,
+        "feasible_price_lower": 0.0,
+        "feasible_price_upper": 0.005,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.6359501642975014,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.6359501642975014,
+      "true_vega": 5.659944770479412e-12,
+      "local_linear_width": 1766801692.5106804
+    },
+    {
+      "maturity_years": 0.08333333333333333,
+      "strike_ratio": 0.7,
+      "forward": 100.0,
+      "strike": 70.0,
+      "discount": 0.9975031223974601,
+      "true_volatility": 0.25,
+      "unrounded_price": 29.925094109875726,
+      "rounded_quote": 29.93,
+      "intrinsic_price": 29.925093671923804,
+      "price_upper_bound": 99.75031223974601,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2500000000249101,
+        "total_std": 0.07216878365589413,
+        "repricing_error": 0.0,
+        "vega": 4.7701692231496594e-05,
+        "iterations": 14
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.4213355057361437,
+        "total_std": 0.12162908382795483,
+        "repricing_error": 0.0,
+        "vega": 0.13020697881478582,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 29.925,
+        "quote_upper": 29.935,
+        "feasible_price_lower": 29.925093671923804,
+        "feasible_price_upper": 29.935,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.4501579624701007,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.4501579624701007,
+      "true_vega": 4.770169211540738e-05,
+      "local_linear_width": 209.63616921191053
+    },
+    {
+      "maturity_years": 0.08333333333333333,
+      "strike_ratio": 0.85,
+      "forward": 100.0,
+      "strike": 85.0,
+      "discount": 0.9975031223974601,
+      "true_volatility": 0.25,
+      "unrounded_price": 14.99048106427306,
+      "rounded_quote": 14.99,
+      "intrinsic_price": 14.962546835961902,
+      "price_upper_bound": 99.75031223974601,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2499999999999981,
+        "total_std": 0.07216878364870268,
+        "repricing_error": 0.0,
+        "vega": 0.8384311489489924,
+        "iterations": 13
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24942286076325906,
+        "total_std": 0.07200217790185708,
+        "repricing_error": 0.0,
+        "vega": 0.828641565983605,
+        "iterations": 13
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 14.985,
+        "quote_upper": 14.995000000000001,
+        "feasible_price_lower": 14.985,
+        "feasible_price_upper": 14.995000000000001,
+        "volatility_lower": 0.24297182788897295,
+        "volatility_upper": 0.2551202388006346,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.012148410911661661,
+      "true_vega": 0.8384311489490247,
+      "local_linear_width": 0.01192703779259039
+    },
+    {
+      "maturity_years": 0.08333333333333333,
+      "strike_ratio": 0.95,
+      "forward": 100.0,
+      "strike": 95.0,
+      "discount": 0.9975031223974601,
+      "true_volatility": 0.25,
+      "unrounded_price": 5.971567139484266,
+      "rounded_quote": 5.97,
+      "intrinsic_price": 4.9875156119873,
+      "price_upper_bound": 99.75031223974601,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2500000000000008,
+        "total_std": 0.07216878364870344,
+        "repricing_error": 2.6645352591003757e-15,
+        "vega": 8.692011994259955,
+        "iterations": 12
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2498196706946306,
+        "total_std": 0.07211672706220432,
+        "repricing_error": -7.993605777301127e-15,
+        "vega": 8.688850147206008,
+        "iterations": 12
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 5.965,
+        "quote_upper": 5.975,
+        "feasible_price_lower": 5.965,
+        "feasible_price_upper": 5.975,
+        "volatility_lower": 0.24924388510432646,
+        "volatility_upper": 0.2503947874407946,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.0011509023364681126,
+      "true_vega": 8.692011994259943,
+      "local_linear_width": 0.001150481615373268
+    },
+    {
+      "maturity_years": 0.08333333333333333,
+      "strike_ratio": 1.0,
+      "forward": 100.0,
+      "strike": 100.0,
+      "discount": 0.9975031223974601,
+      "true_volatility": 0.25,
+      "unrounded_price": 2.871305980436122,
+      "rounded_quote": 2.87,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.75031223974601,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2499999999999996,
+        "total_std": 0.0721687836487031,
+        "repricing_error": 0.0,
+        "vega": 11.480239880909874,
+        "iterations": 11
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24988624104872076,
+        "total_std": 0.07213594426813132,
+        "repricing_error": -1.9984014443252818e-14,
+        "vega": 11.480246681343738,
+        "iterations": 11
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 2.865,
+        "quote_upper": 2.875,
+        "feasible_price_lower": 2.865,
+        "feasible_price_upper": 2.875,
+        "volatility_lower": 0.2494507108311487,
+        "volatility_upper": 0.2503217722537977,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.0008710614226490054,
+      "true_vega": 11.480239880909874,
+      "local_linear_width": 0.0008710619380548557
+    },
+    {
+      "maturity_years": 0.08333333333333333,
+      "strike_ratio": 1.05,
+      "forward": 100.0,
+      "strike": 105.0,
+      "discount": 0.9975031223974601,
+      "true_volatility": 0.25,
+      "unrounded_price": 1.0969702108084853,
+      "rounded_quote": 1.1,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.75031223974601,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.250000000000001,
+        "total_std": 0.07216878364870351,
+        "repricing_error": 3.774758283725532e-15,
+        "vega": 9.360477244202837,
+        "iterations": 12
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.25032358358810175,
+        "total_std": 0.07226219418455115,
+        "repricing_error": -6.661338147750939e-15,
+        "vega": 9.365989804223966,
+        "iterations": 12
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 1.0950000000000002,
+        "quote_upper": 1.105,
+        "feasible_price_lower": 1.0950000000000002,
+        "feasible_price_upper": 1.105,
+        "volatility_lower": 0.2497894776978697,
+        "volatility_upper": 0.25085717195318546,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.0010676942553157764,
+      "true_vega": 9.360477244202821,
+      "local_linear_width": 0.0010683215971913453
+    },
+    {
+      "maturity_years": 0.08333333333333333,
+      "strike_ratio": 1.15,
+      "forward": 100.0,
+      "strike": 114.99999999999999,
+      "discount": 0.9975031223974601,
+      "true_volatility": 0.25,
+      "unrounded_price": 0.07751734656571307,
+      "rounded_quote": 0.08,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.75031223974601,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999995848,
+        "total_std": 0.07216878364869123,
+        "repricing_error": -7.907563492892677e-14,
+        "vega": 1.887591741839438,
+        "iterations": 12
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2513025118408803,
+        "total_std": 0.07254478642968068,
+        "repricing_error": -9.250933352689117e-14,
+        "vega": 1.9245326941095349,
+        "iterations": 12
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 0.075,
+        "quote_upper": 0.085,
+        "feasible_price_lower": 0.075,
+        "feasible_price_upper": 0.085,
+        "volatility_lower": 0.24865278053498382,
+        "volatility_upper": 0.25385243348868747,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.005199652953703643,
+      "true_vega": 1.887591741840614,
+      "local_linear_width": 0.005297755747886922
+    },
+    {
+      "maturity_years": 0.08333333333333333,
+      "strike_ratio": 1.3,
+      "forward": 100.0,
+      "strike": 130.0,
+      "discount": 0.9975031223974601,
+      "true_volatility": 0.25,
+      "unrounded_price": 0.0002776163207782628,
+      "rounded_quote": 0.0,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 99.75031223974601,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999999548,
+        "total_std": 0.07216878364870191,
+        "repricing_error": -4.2392304944183223e-17,
+        "vega": 0.01766179795694205,
+        "iterations": 13
+      },
+      "quote_point_inverse": {
+        "status": "lower_boundary",
+        "volatility": 0.0,
+        "total_std": 0.0,
+        "repricing_error": 0.0,
+        "vega": 0.0,
+        "iterations": 0
+      },
+      "quote_consistent_interval": {
+        "quote_lower": -0.005,
+        "quote_upper": 0.005,
+        "feasible_price_lower": 0.0,
+        "feasible_price_upper": 0.005,
+        "volatility_lower": 0.0,
+        "volatility_upper": 0.3103648760545641,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.3103648760545641,
+      "true_vega": 0.01766179795694625,
+      "local_linear_width": 0.566193771686029
+    },
+    {
+      "maturity_years": 0.5,
+      "strike_ratio": 0.7,
+      "forward": 100.0,
+      "strike": 70.0,
+      "discount": 0.9851119396030626,
+      "true_volatility": 0.25,
+      "unrounded_price": 29.67097316655577,
+      "rounded_quote": 29.67,
+      "intrinsic_price": 29.55335818809188,
+      "price_upper_bound": 98.51119396030626,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2500000000000006,
+        "total_std": 0.1767766952966373,
+        "repricing_error": 0.0,
+        "vega": 3.025093773162586,
+        "iterations": 12
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24967745699714972,
+        "total_std": 0.1765486229520972,
+        "repricing_error": 0.0,
+        "vega": 3.009246643237959,
+        "iterations": 12
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 29.665000000000003,
+        "quote_upper": 29.675,
+        "feasible_price_lower": 29.665000000000003,
+        "feasible_price_upper": 29.675,
+        "volatility_lower": 0.24799281559950292,
+        "volatility_upper": 0.2513170220968575,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.003324206497354598,
+      "true_vega": 3.0250937731625536,
+      "local_linear_width": 0.003305682649812737
+    },
+    {
+      "maturity_years": 0.5,
+      "strike_ratio": 0.85,
+      "forward": 100.0,
+      "strike": 85.0,
+      "discount": 0.9851119396030626,
+      "true_volatility": 0.25,
+      "unrounded_price": 16.329013998551932,
+      "rounded_quote": 16.330000000000002,
+      "intrinsic_price": 14.77667909404594,
+      "price_upper_bound": 98.51119396030626,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2499999999999998,
+        "total_std": 0.17677669529663675,
+        "repricing_error": 7.105427357601002e-15,
+        "vega": 16.724821087253382,
+        "iterations": 11
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.25005894856071426,
+        "total_std": 0.17681837822365912,
+        "repricing_error": 1.0658141036401503e-14,
+        "vega": 16.728122553773982,
+        "iterations": 11
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 16.325000000000003,
+        "quote_upper": 16.335,
+        "feasible_price_lower": 16.325000000000003,
+        "feasible_price_upper": 16.335,
+        "volatility_lower": 0.2497599009048046,
+        "volatility_upper": 0.2503576971821789,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.000597796277374274,
+      "true_vega": 16.724821087253396,
+      "local_linear_width": 0.0005979137204416118
+    },
+    {
+      "maturity_years": 0.5,
+      "strike_ratio": 0.95,
+      "forward": 100.0,
+      "strike": 95.0,
+      "discount": 0.9851119396030626,
+      "true_volatility": 0.25,
+      "unrounded_price": 9.509640037794425,
+      "rounded_quote": 9.51,
+      "intrinsic_price": 4.925559698015313,
+      "price_upper_bound": 98.51119396030626,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999999997,
+        "total_std": 0.17677669529663687,
+        "repricing_error": 0.0,
+        "vega": 25.86806334923878,
+        "iterations": 11
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2500139152837074,
+        "total_std": 0.17678653488810853,
+        "repricing_error": 1.2434497875801753e-14,
+        "vega": 25.868173313832816,
+        "iterations": 11
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 9.504999999999999,
+        "quote_upper": 9.515,
+        "feasible_price_lower": 9.504999999999999,
+        "feasible_price_upper": 9.515,
+        "volatility_lower": 0.24982062186173828,
+        "volatility_upper": 0.25020719729362767,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.0003865754318893855,
+      "true_vega": 25.86806334923878,
+      "local_linear_width": 0.0003865770647377926
+    },
+    {
+      "maturity_years": 0.5,
+      "strike_ratio": 1.0,
+      "forward": 100.0,
+      "strike": 100.0,
+      "discount": 0.9851119396030626,
+      "true_volatility": 0.25,
+      "unrounded_price": 6.938338218418056,
+      "rounded_quote": 6.94,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 98.51119396030626,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2500000000000305,
+        "total_std": 0.17677669529665846,
+        "repricing_error": 8.251177519014163e-13,
+        "vega": 27.68115377499558,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2500600330157915,
+        "total_std": 0.17681914504919813,
+        "repricing_error": 8.313350008393172e-13,
+        "vega": 27.681101838086036,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 6.9350000000000005,
+        "quote_upper": 6.945,
+        "feasible_price_lower": 6.9350000000000005,
+        "feasible_price_upper": 6.945,
+        "volatility_lower": 0.24987940487758692,
+        "volatility_upper": 0.25024066217382535,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.0003612572962384264,
+      "true_vega": 27.681153774995607,
+      "local_linear_width": 0.0003612566181772742
+    },
+    {
+      "maturity_years": 0.5,
+      "strike_ratio": 1.05,
+      "forward": 100.0,
+      "strike": 105.0,
+      "discount": 0.9851119396030626,
+      "true_volatility": 0.25,
+      "unrounded_price": 4.917415478514273,
+      "rounded_quote": 4.92,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 98.51119396030626,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999999997,
+        "total_std": 0.17677669529663687,
+        "repricing_error": -1.9539925233402755e-14,
+        "vega": 27.304709942414153,
+        "iterations": 11
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2500946535618998,
+        "total_std": 0.1768436254721197,
+        "repricing_error": 1.2434497875801753e-14,
+        "vega": 27.305416221267457,
+        "iterations": 11
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 4.915,
+        "quote_upper": 4.925,
+        "feasible_price_lower": 4.915,
+        "feasible_price_upper": 4.925,
+        "volatility_lower": 0.2499115351253448,
+        "volatility_upper": 0.250277762841426,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.0003662277160811911,
+      "true_vega": 27.304709942414153,
+      "local_linear_width": 0.0003662371810976963
+    },
+    {
+      "maturity_years": 0.5,
+      "strike_ratio": 1.15,
+      "forward": 100.0,
+      "strike": 114.99999999999999,
+      "discount": 0.9851119396030626,
+      "true_volatility": 0.25,
+      "unrounded_price": 2.2770097538012446,
+      "rounded_quote": 2.2800000000000002,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 98.51119396030626,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2500000000000004,
+        "total_std": 0.17677669529663717,
+        "repricing_error": 1.3322676295501878e-14,
+        "vega": 21.717065392771282,
+        "iterations": 11
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2501376676939555,
+        "total_std": 0.17687404105658314,
+        "repricing_error": 1.7763568394002505e-14,
+        "vega": 21.72444218906293,
+        "iterations": 11
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 2.2750000000000004,
+        "quote_upper": 2.285,
+        "feasible_price_lower": 2.2750000000000004,
+        "feasible_price_upper": 2.285,
+        "volatility_lower": 0.24990744681701982,
+        "volatility_upper": 0.25036775800199074,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.0004603111849709185,
+      "true_vega": 21.717065392771264,
+      "local_linear_width": 0.00046046737066641596
+    },
+    {
+      "maturity_years": 0.5,
+      "strike_ratio": 1.3,
+      "forward": 100.0,
+      "strike": 130.0,
+      "discount": 0.9851119396030626,
+      "true_volatility": 0.25,
+      "unrounded_price": 0.6015488923149606,
+      "rounded_quote": 0.6,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 98.51119396030626,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2499999999999998,
+        "total_std": 0.17677669529663675,
+        "repricing_error": -4.773959005888173e-15,
+        "vega": 10.491588369348177,
+        "iterations": 12
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24985227236081275,
+        "total_std": 0.17667223608119892,
+        "repricing_error": 2.3314683517128287e-15,
+        "vega": 10.477977548928392,
+        "iterations": 12
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 0.595,
+        "quote_upper": 0.605,
+        "feasible_price_lower": 0.595,
+        "feasible_price_upper": 0.605,
+        "volatility_lower": 0.24937407489025504,
+        "volatility_upper": 0.25032846698958594,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.000954392099330903,
+      "true_vega": 10.491588369348197,
+      "local_linear_width": 0.0009531445237801741
+    },
+    {
+      "maturity_years": 1.0,
+      "strike_ratio": 0.7,
+      "forward": 100.0,
+      "strike": 70.0,
+      "discount": 0.9704455335485082,
+      "true_volatility": 0.25,
+      "unrounded_price": 29.811079905380545,
+      "rounded_quote": 29.810000000000002,
+      "intrinsic_price": 29.113366006455244,
+      "price_upper_bound": 97.04455335485082,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999999956,
+        "total_std": 0.24999999999999956,
+        "repricing_error": -3.552713678800501e-15,
+        "vega": 11.615559734785679,
+        "iterations": 9
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2499069944674113,
+        "total_std": 0.2499069944674113,
+        "repricing_error": -3.552713678800501e-15,
+        "vega": 11.606829838269812,
+        "iterations": 9
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 29.805000000000003,
+        "quote_upper": 29.815,
+        "feasible_price_lower": 29.805000000000003,
+        "feasible_price_upper": 29.815,
+        "volatility_lower": 0.24947546005355628,
+        "volatility_upper": 0.2503370278503615,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.0008615677968052127,
+      "true_vega": 11.615559734785718,
+      "local_linear_width": 0.0008609141727412828
+    },
+    {
+      "maturity_years": 1.0,
+      "strike_ratio": 0.85,
+      "forward": 100.0,
+      "strike": 85.0,
+      "discount": 0.9704455335485082,
+      "true_volatility": 0.25,
+      "unrounded_price": 18.01661504214596,
+      "rounded_quote": 18.02,
+      "intrinsic_price": 14.556683003227622,
+      "price_upper_bound": 97.04455335485082,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000017,
+        "total_std": 0.25000000000000017,
+        "repricing_error": 0.0,
+        "vega": 28.67026343775391,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.25011805377283275,
+        "total_std": 0.25011805377283275,
+        "repricing_error": 7.105427357601002e-15,
+        "vega": 28.6757696890192,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 18.015,
+        "quote_upper": 18.025,
+        "feasible_price_lower": 18.015,
+        "feasible_price_upper": 18.025,
+        "volatility_lower": 0.24994366580472022,
+        "volatility_upper": 0.2502923923224314,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00034872651771117313,
+      "true_vega": 28.6702634377539,
+      "local_linear_width": 0.00034879344662148054
+    },
+    {
+      "maturity_years": 1.0,
+      "strike_ratio": 0.95,
+      "forward": 100.0,
+      "strike": 95.0,
+      "discount": 0.9704455335485082,
+      "true_volatility": 0.25,
+      "unrounded_price": 12.034758726115161,
+      "rounded_quote": 12.030000000000001,
+      "intrinsic_price": 4.85222766774254,
+      "price_upper_bound": 97.04455335485082,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25,
+        "total_std": 0.25,
+        "repricing_error": 0.0,
+        "vega": 36.661402153954086,
+        "iterations": 9
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2498701970309882,
+        "total_std": 0.2498701970309882,
+        "repricing_error": 3.552713678800501e-15,
+        "vega": 36.66089757866923,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 12.025,
+        "quote_upper": 12.035000000000002,
+        "feasible_price_lower": 12.025,
+        "feasible_price_upper": 12.035000000000002,
+        "volatility_lower": 0.24973381094747676,
+        "volatility_upper": 0.2500065811394717,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.0002727701919949532,
+      "true_vega": 36.661402153954086,
+      "local_linear_width": 0.0002727664358827983
+    },
+    {
+      "maturity_years": 1.0,
+      "strike_ratio": 1.0,
+      "forward": 100.0,
+      "strike": 100.0,
+      "discount": 0.9704455335485082,
+      "true_volatility": 0.25,
+      "unrounded_price": 9.6536476266029,
+      "rounded_quote": 9.65,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 97.04455335485082,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999999875,
+        "total_std": 0.24999999999999875,
+        "repricing_error": -1.7763568394002505e-14,
+        "vega": 38.41389153057049,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24990504435673896,
+        "total_std": 0.24990504435673896,
+        "repricing_error": -5.329070518200751e-15,
+        "vega": 38.41411946393778,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 9.645,
+        "quote_upper": 9.655000000000001,
+        "feasible_price_lower": 9.645,
+        "feasible_price_upper": 9.655000000000001,
+        "volatility_lower": 0.24977488441181273,
+        "volatility_upper": 0.2500352053601216,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00026032094830885644,
+      "true_vega": 38.41389153057048,
+      "local_linear_width": 0.0002603224927638955
+    },
+    {
+      "maturity_years": 1.0,
+      "strike_ratio": 1.05,
+      "forward": 100.0,
+      "strike": 105.0,
+      "discount": 0.9704455335485082,
+      "true_volatility": 0.25,
+      "unrounded_price": 7.655695129048987,
+      "rounded_quote": 7.66,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 97.04455335485082,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000017,
+        "total_std": 0.25000000000000017,
+        "repricing_error": 0.0,
+        "vega": 38.620004515077035,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.25011146682829677,
+        "total_std": 0.25011146682829677,
+        "repricing_error": -1.0658141036401503e-14,
+        "vega": 38.6203908125097,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 7.655,
+        "quote_upper": 7.665,
+        "feasible_price_lower": 7.655,
+        "feasible_price_upper": 7.665,
+        "volatility_lower": 0.24998200078897184,
+        "volatility_upper": 0.2502409313654894,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00025893057651757423,
+      "true_vega": 38.620004515077035,
+      "local_linear_width": 0.00025893316496366684
+    },
+    {
+      "maturity_years": 1.0,
+      "strike_ratio": 1.15,
+      "forward": 100.0,
+      "strike": 114.99999999999999,
+      "discount": 0.9704455335485082,
+      "true_volatility": 0.25,
+      "unrounded_price": 4.668667923935724,
+      "rounded_quote": 4.67,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 97.04455335485082,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000044,
+        "total_std": 0.25000000000000044,
+        "repricing_error": 3.552713678800501e-15,
+        "vega": 35.23475381039848,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2500378048949169,
+        "total_std": 0.2500378048949169,
+        "repricing_error": -1.509903313490213e-14,
+        "vega": 35.23633545010854,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 4.665,
+        "quote_upper": 4.675,
+        "feasible_price_lower": 4.665,
+        "feasible_price_upper": 4.675,
+        "volatility_lower": 0.24989589395706407,
+        "volatility_upper": 0.25017969193089956,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00028379797383548677,
+      "true_vega": 35.23475381039846,
+      "local_linear_width": 0.00028381069593421727
+    },
+    {
+      "maturity_years": 1.0,
+      "strike_ratio": 1.3,
+      "forward": 100.0,
+      "strike": 130.0,
+      "discount": 0.9704455335485082,
+      "true_volatility": 0.25,
+      "unrounded_price": 2.0851379009311457,
+      "rounded_quote": 2.09,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 97.04455335485082,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999999994,
+        "total_std": 0.24999999999999994,
+        "repricing_error": 6.661338147750939e-15,
+        "vega": 25.252400660381188,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.25019245968093506,
+        "total_std": 0.25019245968093506,
+        "repricing_error": 1.7319479184152442e-14,
+        "vega": 25.27349163755748,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 2.085,
+        "quote_upper": 2.0949999999999998,
+        "feasible_price_lower": 2.085,
+        "feasible_price_upper": 2.0949999999999998,
+        "volatility_lower": 0.24999453903142416,
+        "volatility_upper": 0.2503902107512939,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00039567171986976124,
+      "true_vega": 25.2524006603812,
+      "local_linear_width": 0.00039600195381380603
+    },
+    {
+      "maturity_years": 2.0,
+      "strike_ratio": 0.7,
+      "forward": 100.0,
+      "strike": 70.0,
+      "discount": 0.9417645335842487,
+      "true_volatility": 0.25,
+      "unrounded_price": 30.512584318201522,
+      "rounded_quote": 30.51,
+      "intrinsic_price": 28.252936007527463,
+      "price_upper_bound": 94.17645335842487,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000006,
+        "total_std": 0.35355339059327384,
+        "repricing_error": 1.0658141036401503e-14,
+        "vega": 26.310673900000452,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24990175776700707,
+        "total_std": 0.3534144550949774,
+        "repricing_error": -1.0658141036401503e-14,
+        "vega": 26.30047005607546,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 30.505000000000003,
+        "quote_upper": 30.515,
+        "feasible_price_lower": 30.505000000000003,
+        "feasible_price_upper": 30.515,
+        "volatility_lower": 0.24971157560891757,
+        "volatility_upper": 0.2500917971348646,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00038022152594704983,
+      "true_vega": 26.310673900000445,
+      "local_linear_width": 0.0003800738832462908
+    },
+    {
+      "maturity_years": 2.0,
+      "strike_ratio": 0.85,
+      "forward": 100.0,
+      "strike": 85.0,
+      "discount": 0.9417645335842487,
+      "true_volatility": 0.25,
+      "unrounded_price": 20.539155518206996,
+      "rounded_quote": 20.54,
+      "intrinsic_price": 14.126468003763732,
+      "price_upper_bound": 94.17645335842487,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.2499999999999998,
+        "total_std": 0.3535533905932735,
+        "repricing_error": 0.0,
+        "vega": 43.39182973950574,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.250019461633225,
+        "total_std": 0.35358091349892656,
+        "repricing_error": -1.4210854715202004e-14,
+        "vega": 43.392437845211646,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 20.535,
+        "quote_upper": 20.544999999999998,
+        "feasible_price_lower": 20.535,
+        "feasible_price_upper": 20.544999999999998,
+        "volatility_lower": 0.24990422939959128,
+        "volatility_upper": 0.2501346843072881,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00023045490769679766,
+      "true_vega": 43.391829739505745,
+      "local_linear_width": 0.0002304581314047603
+    },
+    {
+      "maturity_years": 2.0,
+      "strike_ratio": 0.95,
+      "forward": 100.0,
+      "strike": 95.0,
+      "discount": 0.9417645335842487,
+      "true_volatility": 0.25,
+      "unrounded_price": 15.372446269190087,
+      "rounded_quote": 15.370000000000001,
+      "intrinsic_price": 4.708822667921243,
+      "price_upper_bound": 94.17645335842487,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.24999999999999978,
+        "total_std": 0.35355339059327345,
+        "repricing_error": 0.0,
+        "vega": 50.45135414024044,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24995151236645585,
+        "total_std": 0.35348481872430826,
+        "repricing_error": 1.7763568394002505e-15,
+        "vega": 50.45145387784611,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 15.365,
+        "quote_upper": 15.375000000000002,
+        "feasible_price_lower": 15.365,
+        "feasible_price_upper": 15.375000000000002,
+        "volatility_lower": 0.2498524073945367,
+        "volatility_upper": 0.25005061773846443,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00019821034392772385,
+      "true_vega": 50.45135414024044,
+      "local_linear_width": 0.00019821073527982698
+    },
+    {
+      "maturity_years": 2.0,
+      "strike_ratio": 1.0,
+      "forward": 100.0,
+      "strike": 100.0,
+      "discount": 0.9417645335842487,
+      "true_volatility": 0.25,
+      "unrounded_price": 13.214482516904038,
+      "rounded_quote": 13.21,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 94.17645335842487,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000067,
+        "total_std": 0.35355339059327473,
+        "repricing_error": 0.0,
+        "vega": 52.30961738936566,
+        "iterations": 9
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.2499143084365094,
+        "total_std": 0.35343220442200446,
+        "repricing_error": 1.0658141036401503e-14,
+        "vega": 52.310177607950024,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 13.205,
+        "quote_upper": 13.215000000000002,
+        "feasible_price_lower": 13.205,
+        "feasible_price_upper": 13.215000000000002,
+        "volatility_lower": 0.2498187253134346,
+        "volatility_upper": 0.2500098927012236,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00019116738778898745,
+      "true_vega": 52.30961738936566,
+      "local_linear_width": 0.00019116943497340434
+    },
+    {
+      "maturity_years": 2.0,
+      "strike_ratio": 1.05,
+      "forward": 100.0,
+      "strike": 105.0,
+      "discount": 0.9417645335842487,
+      "true_volatility": 0.25,
+      "unrounded_price": 11.317834544731362,
+      "rounded_quote": 11.32,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 94.17645335842487,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000044,
+        "total_std": 0.35355339059327445,
+        "repricing_error": 1.9539925233402755e-14,
+        "vega": 53.093441303066506,
+        "iterations": 11
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.25004078578017236,
+        "total_std": 0.3536110703967455,
+        "repricing_error": -1.7763568394002505e-14,
+        "vega": 53.093335513062975,
+        "iterations": 11
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 11.315,
+        "quote_upper": 11.325000000000001,
+        "feasible_price_lower": 11.315,
+        "feasible_price_upper": 11.325000000000001,
+        "volatility_lower": 0.24994661221858358,
+        "volatility_upper": 0.250134959775284,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00018834755670041337,
+      "true_vega": 53.093441303066506,
+      "local_linear_width": 0.00018834718101842896
+    },
+    {
+      "maturity_years": 2.0,
+      "strike_ratio": 1.15,
+      "forward": 100.0,
+      "strike": 114.99999999999999,
+      "discount": 0.9417645335842487,
+      "true_volatility": 0.25,
+      "unrounded_price": 8.224471266452781,
+      "rounded_quote": 8.22,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 94.17645335842487,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25000000000000044,
+        "total_std": 0.35355339059327445,
+        "repricing_error": 3.552713678800501e-15,
+        "vega": 51.87970182869263,
+        "iterations": 10
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24991381286524736,
+        "total_std": 0.3534315035784045,
+        "repricing_error": 1.5987211554602254e-14,
+        "vega": 51.877464345491106,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 8.215,
+        "quote_upper": 8.225000000000001,
+        "feasible_price_lower": 8.215,
+        "feasible_price_upper": 8.225000000000001,
+        "volatility_lower": 0.24981742957458258,
+        "volatility_upper": 0.25001019150421705,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00019276192963446626,
+      "true_vega": 51.87970182869262,
+      "local_linear_width": 0.0001927536136005584
+    },
+    {
+      "maturity_years": 2.0,
+      "strike_ratio": 1.3,
+      "forward": 100.0,
+      "strike": 130.0,
+      "discount": 0.9417645335842487,
+      "true_volatility": 0.25,
+      "unrounded_price": 5.002925759968379,
+      "rounded_quote": 5.0,
+      "intrinsic_price": 0.0,
+      "price_upper_bound": 94.17645335842487,
+      "full_precision_inverse": {
+        "status": "interior",
+        "volatility": 0.25,
+        "total_std": 0.3535533905932738,
+        "repricing_error": 0.0,
+        "vega": 45.287105547487414,
+        "iterations": 9
+      },
+      "quote_point_inverse": {
+        "status": "interior",
+        "volatility": 0.24993539096021863,
+        "total_std": 0.3534620196129631,
+        "repricing_error": -2.6645352591003757e-14,
+        "vega": 45.28102409045513,
+        "iterations": 10
+      },
+      "quote_consistent_interval": {
+        "quote_lower": 4.995,
+        "quote_upper": 5.005,
+        "feasible_price_lower": 4.995,
+        "feasible_price_upper": 5.005,
+        "volatility_lower": 0.2498249567439947,
+        "volatility_upper": 0.2500457998217396,
+        "upper_unbounded": false
+      },
+      "interval_width": 0.00022084307774486445,
+      "true_vega": 45.287105547487414,
+      "local_linear_width": 0.0002208134054739741
+    }
+  ]
+}
